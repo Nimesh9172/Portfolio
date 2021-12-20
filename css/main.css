@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+ 
+html {
+    scroll-behavior: smooth;
+}
+
+nav.navbar {
+    transition: 0.6s;
+    background-color: #101113 !important;
+}
+
+/* .navbar-brand {
+    font-size: 1.80rem !important;
+} */
+
+.banner-image{
+    background-image: url('../img/bg1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh !important;       
+}
+
+.navbar.scroll {
+    background:red !important;
+    padding: 8px 0px !important;
+
+}
+
+.nav-link:hover.scroll {
+    color:red !important;   
+    
+} 
+.nav-link:hover{
+    text-decoration: overline !important;
+    transition: .6s;
+}
+
+.home,.about,.navbar{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p .text-muted{
+    font-family: 'Poppins' , sans-serif;
+}
+
+.line::before,
+.line::after {
+    display: inline-block;
+    content: "";
+    border-top: 3px solid #212529;
+    width: 27px;
+    margin: 0 4px;
+    transform: translateY(-2px);
+}
+
+.cvbtn:hover{
+    background-color: white !important;
+    color: crimson !important;
+}
