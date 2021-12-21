@@ -36,7 +36,7 @@ nav.navbar {
     transition: .6s;
 }
 
-.home,.about,.navbar{
+.home,.about,.navbar,.title{
     font-family: 'Ubuntu', sans-serif;
 }
 
