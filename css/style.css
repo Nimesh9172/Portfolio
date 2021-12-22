@@ -4,8 +4,11 @@ html {
     scroll-behavior: smooth;
 }
 
+    /* navbar css start */
+
+
 nav.navbar {
-    transition: 0.6s;
+    transition: 0.6s ease;
     background-color: #101113 !important;
 }
 
@@ -33,28 +36,48 @@ nav.navbar {
 } 
 .nav-link:hover{
     text-decoration: overline !important;
-    transition: .6s;
+    transition: .6s ease;
 }
+    /* navbar css end */
 
-.home,.about,.navbar,.title{
-    font-family: 'Ubuntu', sans-serif;
-}
 
-p .text-muted{
-    font-family: 'Poppins' , sans-serif;
-}
+    /* about css start*/
 
-.line::before,
-.line::after {
-    display: inline-block;
-    content: "";
+
+.about-line::before,
+.about-line::after{
     border-top: 3px solid #212529;
-    width: 27px;
-    margin: 0 4px;
-    transform: translateY(-2px);
+    
 }
 
 .cvbtn:hover{
     background-color: white !important;
     color: crimson !important;
 }
+    /* about css end */
+
+
+/* common css start*/
+.home,.about,.navbar,.title,.skills{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.line::before,
+.line::after {
+    display: inline-block;
+    content: "";
+    width: 27px;
+    margin: 0 4px;
+    transform: translateY(-2px);
+}
+/* common css end */
+
+
+    /* skills css start */
+
+.skills-line::after,
+.skills-line::before{
+   border-top: 3px solid white;
+}
+
+    /* skills css end */

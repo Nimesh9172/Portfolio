@@ -15,7 +15,7 @@
   <!-- navbar start -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark py-3">
     <div class="container">
-    <a class="navbar-brand text-white fw-bold" href="#">Portfo<span class="text-danger " id="lio">lio</span></a>
+      <a class="navbar-brand text-white fw-bold" href="#">Portfo<span class="text-danger " id="lio">lio</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,16 +23,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav fw-bold ms-auto">
           <li class="nav-item">
-            <a class="nav-link mx-2 text-white" aria-current="page" href="#">Home</a>
+            <a class="nav-link mx-2 text-white" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2 text-white" aria-current="page" href="#">About</a>
+            <a class="nav-link mx-2 text-white" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2 text-white" aria-current="page" href="#">Skills</a>
+            <a class="nav-link mx-2 text-white" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2 text-white" aria-current="page" href="#">Contact</a>
+            <a class="nav-link mx-2 text-white" href="#">Contact</a>
           </li>
         </ul>
       </div>
@@ -41,20 +41,22 @@
   <!-- navbar end -->
 
   <!-- home section start -->
-  <div class="home banner-image w-100 d-flex align-items-center">
-    <div class="content container text-white">
-      <p class="h4">Hello, my name is</p>
-      <p class="h1 fw-bold ">Nimesh Vishwakarma</p>
-      <p class="h2">And I'm a <span class="text-danger"> Developer</span></p>
-      <button class="btn btn-outline-danger">Hire me</button>
+  <section class="home" id="home">
+    <div class="home banner-image w-100 d-flex align-items-center">
+      <div class="content container text-white">
+        <p class="h4">Hello, my name is</p>
+        <p class="h1 fw-bold ">Nimesh Vishwakarma</p>
+        <p class="h2">And I'm a <span class="text-danger animate"></span></p>
+        <button class="btn btn-outline-danger">Hire me</button>
+      </div>
     </div>
-  </div>
+  </section>
   <!-- home section end -->
 
   <!-- about section start -->
-  <section class="about" id="about">
+  <section class="about pt-4" id="about">
     <div class="container my-5">
-      <div class="row ">
+      <div class="row">
         <div class="col-lg-12">
           <div class="title d-flex justify-content-center align-item-center">
             <h2 class="h2 fw-bold flex-column">About me</h2>
@@ -62,48 +64,108 @@
         </div>
         <div class="col-lg-12">
           <div class=" d-flex justify-content-center align-item-center">
-            <span class="flex-column fw-bold text-danger line">Who i am</span>
+            <span class="flex-column fw-bold text-danger about-line line">Who i am</span>
           </div>
         </div>
       </div>
       <div class="row p-4">
         <div class="col-md-6">
-          <img src="img/profile.png" class="img-fluid" alt="">
+          <img src="img/profile.png" alt="Avatar" class="image img-fluid">
         </div>
         <div class="col-md-6 mt-lg-5 mt-5">
-          <h3>I'm Nimesh and I'm a <span class="text-danger">Developer</span></h3>
-          <p class="text-muted">Seeking a beginner role to enhance and explore my technical knowledge gained in 2 years. I Want to work for an organization which provides me the opportunity to improve my skills and knowledge to growth along with the organization objective. I have ability to work as individual as well as in group, Eager to learn new things and highly motivated. I hold a full-stack web developement certificate from itvedant.</p>
+          <h3>I'm Nimesh and I'm a <span class="text-danger animate-2"></span></h3>
+          <p class="">Seeking a beginner role to enhance and explore my technical knowledge gained in 2 years.
+            I Want to work for an organization which provides me the opportunity to improve my skills and knowledge to
+            growth along with the organization objective. I have ability to work as individual as well as in group,
+            Eager to learn new things and highly motivated. I hold a full-stack web developement certificate from
+            itvedant.</p>
           <button class="btn btn-danger btn-lg cvbtn">Download CV</button>
         </div>
       </div>
     </div>
   </section>
-  <!-- about sextion end -->
+  <!-- about section end -->
 
+  <!-- skill section start -->
+  <section class="skills pt-4 bg-dark text-light" id="skills">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 title d-flex justify-content-center align-item-center">
+          <h1>My Skills</h1>
+        </div>
+        <div class="col-12 title d-flex justify-content-center align-item-center">
+          <span class="flex-column fw-bold text-danger skills-line line"> What i know</span>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <p class="fw-bold mt-lg-5 h5">Programming languages:</p>
+          <p>Python, Django, Flask, Html5, Css3, Bootstrap5, Javascript, Jquery, Reactjs and AngularJs </p>
+          <p class="fw-bold h5">Databases:</p>
+          <p>Mongodb and Mysql</p>
+          <button class="btn btn-outline-danger mb-5">Read more...</button>
+        </div>
+        <div class="col-md-6">
+          <div class="skill-item mb-3">
+            <h>Python</h>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="skill-item mb-3">
+            <h>Django</h>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 15%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="skill-item mb-3">
+            <h>Mysql</h>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="skill-item mb-3">
+            <h>React</h>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="skill-item mb-3">
+            <h>Bootstrap</h>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="skill-item mb-3">
+            <h>Javascript</h>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="skill-item mb-5">
+            <h>Jquery</h>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- skill section end -->
 
-
-  <div class="container my-5 d-grid gap-5">
-    <div class="p-5 border">
-     <p class="che">!!!!!!!!!!!!!Work in progress!!!!!!!!<p>
+  <section>
+    <div class="container my-5 d-grid gap-5">
+      <div class="p-5 border">
+        <h1 class="">!!!!!!!!!!!!!Work in <span class="testing"></span> !!!!!!!!</h1>
+      </div>
     </div>
-    <div class="p-5 border">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium temporibus voluptate voluptatem dolores sunt illum at est quas nostrum molestias, reiciendis facere, voluptates alias distinctio, ab eius minus impedit excepturi.</p>
-    </div>
-    <div class="p-5 border">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium temporibus voluptate voluptatem dolores sunt illum at est quas nostrum molestias, reiciendis facere, voluptates alias distinctio, ab eius minus impedit excepturi.</p>
-    </div>
-    <div class="p-5 border">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium temporibus voluptate voluptatem dolores sunt illum at est quas nostrum molestias, reiciendis facere, voluptates alias distinctio, ab eius minus impedit excepturi.</p>
-    </div>
-    <div class="p-5 border">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium temporibus voluptate voluptatem dolores sunt illum at est quas nostrum molestias, reiciendis facere, voluptates alias distinctio, ab eius minus impedit excepturi.</p>
-    </div>
-  </div>
-
+  </section>
 
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/jquery-3.6.0.min.js"></script> 
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/typed.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
