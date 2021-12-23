@@ -4,6 +4,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
     /* navbar css start */
 
 
@@ -58,6 +59,8 @@ nav.navbar {
 
 
 /* common css start*/
+
+
 .home,.about,.navbar,.title,.skills{
     font-family: 'Ubuntu', sans-serif;
 }
@@ -70,6 +73,10 @@ nav.navbar {
     margin: 0 4px;
     transform: translateY(-2px);
 }
+
+.dark{
+    background-color: #111;
+}
 /* common css end */
 
 
@@ -81,3 +88,9 @@ nav.navbar {
 }
 
     /* skills css end */
+
+.fo-text{
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: 'poppins', sans-serif;
+}
