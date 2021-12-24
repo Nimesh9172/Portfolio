@@ -97,20 +97,24 @@
           <span class="flex-column fw-bold text-danger skills-line line"> What i know</span>
         </div>
       </div>
-      <div class="row pb-5">
-        <div class="col-md-6">
-          <p class="fw-bold mt-lg-5 h5">My skills & what i do.</p>
-          <ul class="list-styled">
-            <li>I do web development</li>
-            <li>I have developed several front-end and back-end web application projects for improving my web developent
-              skills utilizing React.js,Bootstrap,flask and django</li>
-          </ul>
+      <div class="row">
+        <div class="col-md-6 py-lg-4">
           <p class="fw-bold h5">Programming languages & Framework:</p>
           <p>Python, Django, Flask, Html5, Css3, Bootstrap5, Javascript, Jquery, Reactjs and AngularJs </p>
           <p class="fw-bold h5">Databases:</p>
           <p>Mongodb and Mysql</p>
-          <button class="btn btn-outline-danger mb-5">Read more...</button>
+          <div id="mydiv" style="display: none;">
+            <p class="fw-bold h5">My skills & what i do.</p>
+            <ul class="list-styled">
+              <li>I do web development</li>
+              <li>I have developed several front-end and back-end web application projects for improving my web
+                developent
+                skills utilizing React.js,Bootstrap,flask and django</li>
+            </ul>
+          </div>
+          <button id="divshow" class="btn btn-outline-danger">Read more...</button>
         </div>
+
         <div class="col-md-6 mt-5">
           <div class="skill-item mb-3">
             <h>Python</h>
@@ -170,86 +174,89 @@
 
   <!-- contact section start -->
 
-    <section class="contact py-5" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 title text-center">
-            <h1>Contact me</h1>
-          </div>
-        </div>
+  <section class="contact py-5" id="contact">
+    <div class="container">
+      <div class="row">
         <div class="col-12 title text-center">
-          <span class="fw-bold text-danger line about-line">get in touch</span>
+          <h1>Contact me</h1>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h3 class="title">Get in touch</h3>
-            <p class="title">To get in touch with me email me on given email address below or Whatsapp me on given number.</p>
-            <div class="">
-              <div class="row">
-                <div class="col-sm-1 mx-2">
-                  <i class="mt-2 fas fa-user fa-2x text-danger"></i> 
-                </div>
-                <div class="col-sm-10">
-                  <span class="title fw-bold">Name</span>
-                  <p class="title">Nimesh Vishwakarma</p>
-                </div>
+      </div>
+      <div class="col-12 title text-center">
+        <span class="fw-bold text-danger line about-line">get in touch</span>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="title">Get in touch</h3>
+          <p class="title">To get in touch with me email me on given email address below or Whatsapp me on given number.
+          </p>
+          <div class="">
+            <div class="row">
+              <div class="col-sm-1 mx-2">
+                <i class="mt-2 fas fa-user fa-2x text-danger"></i>
               </div>
-              <div class="row">
-                <div class="col-sm-1 mx-2">
-                  <i class="mt-2 fas fa-map-marker-alt fa-2x text-danger"></i> 
-                </div>
-                <div class="col-sm-10">
-                  <span class="fw-bold">Address</span>
-                  <p class="title">Mumbai,Maharashtra</p>
-                </div>
+              <div class="col-sm-10">
+                <span class="title fw-bold">Name</span>
+                <p class="title">Nimesh Vishwakarma</p>
               </div>
-              <div class="row">
-                <div class="col-sm-1 mx-2">
-                  <i class="mt-2  fas fa-envelope fa-2x text-danger"></i> 
-                </div>
-                <div class="col-sm-10">
-                  <span class="fw-bold">Email</span>
-                  <p class="title">nimeshvishwav@gmail</p>
-                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-1 mx-2">
+                <i class="mt-2 fas fa-map-marker-alt fa-2x text-danger"></i>
               </div>
-              <div class="row">
-                <div class="col-sm-1 mx-2">
-                  <i class="mt-2 fab fa-whatsapp-square whatsapp fa-2x text-danger"></i> 
-                </div>
-                <div class="col-sm-10">
-                  <span class="title fw-bold">Whatsapp</span>
-                  <p class="title">+91 7972 8612 53</p>
-                </div>
+              <div class="col-sm-10">
+                <span class="fw-bold">Address</span>
+                <p class="title">Mumbai,Maharashtra</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-1 mx-2">
+                <i class="mt-2  fas fa-envelope fa-2x text-danger"></i>
+              </div>
+              <div class="col-sm-10">
+                <span class="fw-bold">Email</span>
+                <p class="title">nimeshvishwav@gmail</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-1 mx-2">
+                <i class="mt-2 fab fa-whatsapp-square whatsapp fa-2x text-danger"></i>
+              </div>
+              <div class="col-sm-10">
+                <span class="title fw-bold">Whatsapp</span>
+                <p class="title">+91 7972 8612 53</p>
               </div>
             </div>
           </div>
-          <div class="title col-md-6 mt-3">
-            <h4>Message me</h4>
-            <div class="row">
-             <div class="col-md-6 mt-3">
-               <input type="text" class="form-control form-control-lg" placeholder="name">
-             </div>
-             <div class="col-md-6 mt-3">
+        </div>
+        <div class="title col-md-6 mt-3">
+          <h4>Message me</h4>
+          <div class="row">
+            <div class="col-md-6 mt-3">
+              <input type="text" class="form-control form-control-lg" placeholder="name">
+            </div>
+            <div class="col-md-6 mt-3">
               <input type="email" class="form-control form-control-lg" placeholder="Email">
             </div>
             <div class="col-12 my-3">
               <input type="text" class="form-control form-control-lg" placeholder="Subject">
             </div>
             <div class="col-12 my-1">
-              <textarea class="form-control" rows="6" placeholder="Description..." aria-label="With textarea"></textarea>
-            </div>
+              <textarea class="form-control" rows="6" placeholder="Description..."
+                aria-label="With textarea"></textarea>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
   <!-- contact section end -->
   <section class="dark">
     <div class="container-fluid text-white py-3 px-lg-5 fo-text">
-      <span>Created by  </span><span class="text-danger"><a>Nimesh vishwakarma</a></span><span> &copy; | 2021 ALL rights reserved</span>
+      <span>Created by </span><span class="text-danger"><a>Nimesh vishwakarma</a></span><span> &copy; | 2021 ALL rights
+        reserved</span>
     </div>
   </section>
-  
+
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>

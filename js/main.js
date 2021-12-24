@@ -27,18 +27,26 @@ $(document).ready(function () {
     loop: true,
   });
 
-  var typed = new Typed(".testing", {
-    strings: ["progress"],
-    typeSpeed: 100,
-    backSpeed: 40,
-    loop: true,
-  });
+  // $("#divshow").click(function () {
+  //   $("#mydiv").css("display", "block");
+  //   $("#divshow").css("display", "none");
+  // });
 
-  $("#divshow").click(function () {
-    $("#mydiv").css("display", "block");
+  // $("#divhide").click(function () {
+  //   $("#mydiv").css("display", "none");
+  //   $("#divshow").css("display", "block");
+  // });
+  $(document).ready(function () {
+    $("#divshow").click(function () {
+      $("#mydiv").toggle("slide");
+      if($(this).text() == 'Hide')
+       {
+           $(this).text('Read more...');
+       }
+       else
+       {
+           $(this).text('Hide');
+       }
+           });
+    });
   });
-
-  $("#divhide").click(function () {
-    $("#mydiv").css("display", "none");
-  });
-});
