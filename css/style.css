@@ -53,11 +53,15 @@ nav.navbar {
 /* home section end */
 
 /* about css start*/
-
 .about-line::before,
 .about-line::after {
   border-top: 3px solid #212529;
 }
+
+.image{
+    border-radius: 300px;
+}
+
 .cvbtn {
   background: crimson !important;
 }
