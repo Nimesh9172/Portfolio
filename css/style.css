@@ -4,6 +4,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 /* navbar css start */
 
 nav.navbar {
@@ -156,6 +158,9 @@ i {
     box-shadow:none !important;
 }
 
+.whatsapp{
+  font-size: 36px !important;
+}
 
 /* contact section end */
 

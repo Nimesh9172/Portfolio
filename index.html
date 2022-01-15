@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -44,10 +45,11 @@
   <section class="home" id="home">
     <div class="home banner-image w-100 d-flex align-items-center">
       <div class="content container text-white">
-        <p class="h4">Hello, my name is</p>
-        <p class="h1 fw-bold ">Nimesh Vishwakarma</p>
-        <p class="h2">And I'm a <span class="crimson animate"></span></p>
-        <button class="btn btn-outline-danger hire">Hire me</button>
+        <p data-aos="fade-down" class="h4">Hello, my name is</p>
+        <p class="h1 fw-bold" data-aos="zoom-out">Nimesh Vishwakarma</p>
+        <p data-aos="fade-up" class="h2"> And I'm a <span class="crimson animate"></span></p>
+        <button data-aos="slide-up" data-aos-duration="1000" data-aos-delay="500" class="btn btn-outline-danger hire">Hire me</button>
+  
       </div>
     </div>
   </section>
@@ -55,9 +57,9 @@
 
   <!-- about section start -->
   <section class="about pt-5" id="about">
-    <div class="container px-5 py-5 box">
+    <div class="container px-md-5 py-5 box" data-aos="fade-up">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12" data-aos="fade-up">
           <div class="title text-center">
             <h1>About me</h1>
           </div>
@@ -69,17 +71,21 @@
         </div>
       </div>
       <div class="row p-4">
-        <div class="col-md-5 mt-4">
-          <img src="img/myself.png" alt="Avatar" class="image img-fluid">
+        <div class="col-md-5"  data-aos="fade-right" data-aos-offset="100"
+        data-aos-duration="500">
+          <div>
+            <img src="img/myself2.jpg" alt="Avatar" class="image img-fluid">
+          </div>
         </div>
-        <div class="col-md-7 mt-4">
+        <div class="col-md-7 mt-4" data-aos="fade-left"data-aos-offset="100"
+        data-aos-duration="500">
           <h3>I'm Nimesh and I'm a <span class="crimson animate-2"></span></h3>
           <p class="">Seeking a beginner role to enhance and explore my technical knowledge gained in 2 years.
             I Want to work for an organization which provides me the opportunity to improve my skills and knowledge to
             growth along with the organization objective. I have ability to work as individual as well as in group,
             Eager to learn new things and highly motivated. I hold a full-stack web developement certificate from
             itvedant.</p>
-          <button class="btn btn-danger btn-lg cvbtn">Download CV</button>
+          <button data-aos="slide-left" data-aos-duration="800" data-aos-anchor-placement="center-bottom" class="btn btn-danger btn-lg cvbtn">Download CV</button>
         </div>
       </div>
     </div>
@@ -88,9 +94,9 @@
 
   <!-- skill section start -->
   <section class="skills py-5 text-light" id="skills">
-    <div class="container pb-5 pt-4 dark px-5 box">
+    <div class="container pb-5 pt-4 dark px-md-5 px-sm-2 box" data-aos="zoom-in-up">
       <div class="row py-md-3">
-        <div class="col-12 title text-center">
+        <div class="col-12 title text-center" data-aos="slide-up" data-aos-duration="1000">
           <h1>My Skills</h1>
         </div>
         <div class="col-12 title text-center">
@@ -98,7 +104,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 py-4 mt-1">
+        <div class="col-md-6 py-4 mt-1" data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom"  data-aos-delay="500" data-aos-duration="1000">
           <p class="fw-bold h5">Programming languages & Framework:</p>
           <p>Python, Django, Flask, Html5, Css3, Bootstrap5, Javascript, Jquery, Reactjs and AngularJs </p>
           <p class="fw-bold h5">Databases:</p>
@@ -115,7 +121,7 @@
           <button id="divshow" class="btn rmbtn">Read more...</button>
         </div>
 
-        <div class="col-md-6 mt-md-3">
+        <div class="col-md-6 mt-md-3" data-aos="zoom-in-left" data-aos-anchor-placement="top-bottom"  data-aos-delay="200" data-aos-duration="1000">
           <div class="skill-item mb-3">
             <h>Python</h>
             <div class="progress" style="height: 5px;">
@@ -175,7 +181,7 @@
   <!-- contact section start -->
 
   <section class="contact pb-5" id="contact">
-    <div class="container box py-5 px-5">
+    <div class="container box py-5 px-md-5 px-sm-2" data-aos="flip-down">
       <div class="row">
         <div class="col-12 title text-center">
           <h1>Contact me</h1>
@@ -190,16 +196,18 @@
           <p class="title">To get in touch with me email me on given email address below or Whatsapp me on given number.
           </p>
           <div class="">
-            <div class="row">
+            <div class="row px-lg-1 px-sm-5" data-aos="slide-right" data-aos-offset="200"
+            data-aos-easing="ease">
               <div class="col-sm-1 mx-md-2">
                 <i class="mt-2 fas fa-user fa-2x"></i>
               </div>
-              <div class="col-sm-10">
+              <div class="col-sm-10" >
                 <span class="title fw-bold">Name</span>
                 <p class="title">Nimesh Vishwakarma</p>
               </div>
             </div>
-            <div class="row">
+            <div class="row px-lg-1 px-sm-5" data-aos="slide-right" data-aos-offset="100"
+            data-aos-easing="ease" data-aos-delay="100">
               <div class="col-sm-1 mx-md-2">
                 <i class="mt-2 fas fa-map-marker-alt fa-2x"></i>
               </div>
@@ -208,7 +216,8 @@
                 <p class="title">Mumbai,Maharashtra</p>
               </div>
             </div>
-            <div class="row">
+            <div class="row px-lg-1 px-sm-5" data-aos="slide-right" data-aos-offset="100"
+            data-aos-easing="ease" data-aos-delay="200">
               <div class="col-sm-1 mx-md-2">
                 <i class="mt-2 fas fa-envelope fa-2x"></i>
               </div>
@@ -217,7 +226,8 @@
                 <p class="title">nimeshvishwav@gmail</p>
               </div>
             </div>
-            <div class="row">
+            <div class="row px-md-0 px-xs-5" data-aos="slide-right" data-aos-offset="100"
+            data-aos-easing="ease" data-aos-delay="300">
               <div class="col-sm-1 mx-md-2">
                 <i class="mt-2 fab fa-whatsapp-square whatsapp fa-2x"></i>
               </div>
@@ -253,9 +263,7 @@
   </section>
   <!-- contact section end -->
 
-
-
-
+  <!-- footer section start -->
 
   <section class="dark">
     <div class="container-fluid text-white py-3 px-lg-5 fo-text">
@@ -265,10 +273,22 @@
   </section>
 
 
+
+
+  <!-- bootstrap js -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
+<!-- Main js -->
+<script src="js/main.js"></script>
+  <!-- typed js -->
   <script src="js/typed.min.js"></script>
-  <script src="js/main.js"></script>
+
+
+  <!-- Animation on scoll js -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/aos.js"></script>
+
+  
 </body>
 
 </html>
