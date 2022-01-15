@@ -29,15 +29,6 @@ $(document).ready(function () {
     loop: true,
   });
 
-  // $("#divshow").click(function () {
-  //   $("#mydiv").css("display", "block");
-  //   $("#divshow").css("display", "none");
-  // });
-
-  // $("#divhide").click(function () {
-  //   $("#mydiv").css("display", "none");
-  //   $("#divshow").css("display", "block");
-  // });
   $(document).ready(function () {
     $("#divshow").click(function () {
       $("#mydiv").toggle("slide");
