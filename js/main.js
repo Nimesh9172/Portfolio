@@ -5,18 +5,18 @@ $(document).ready(function () {
       $(".navbar").addClass("scroll");
       $(".navbar-brand").addClass("scroll");
       $("#lio").addClass("text-white");
-      $(".nav-link").removeClass("scroll");
+      $(".nav-text").addClass("scroll");
     } else {
+      $("#lio").removeClass("text-white");
       $(".navbar").removeClass("scroll");
       $(".navbar-brand").removeClass("scroll");
-      $("#lio").removeClass("text-white");
-      $(".nav-link").addClass("scroll");
+      $(".nav-text").removeClass("scroll");
     }
   });
 
   //typing animation script
   var typed = new Typed(".animate", {
-    strings: ["Developer", "Designer", "Progammer", "Gamer"],
+    strings: ["Developer", "Designer", "Programmer", "Gamer"],
     typeSpeed: 100,
     backSpeed: 80,
     loop: true,

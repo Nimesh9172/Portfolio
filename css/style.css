@@ -4,8 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 /* navbar css start */
 
 nav.navbar {
@@ -13,10 +11,9 @@ nav.navbar {
   background-color: #101113 !important;
 }
 
-.navbar-brand{
-    font-size: 1.6rem !important;
-    transition: 0.8s ease;
-
+.navbar-brand {
+  font-size: 1.6rem !important;
+  transition: 0.8s ease;
 }
 
 .banner-image {
@@ -32,17 +29,51 @@ nav.navbar {
   padding: 8px 0px !important;
 }
 
-.navbar-brand.scroll{
-    font-size: 1.3rem !important;
+.navbar-brand.scroll {
+  font-size: 1.3rem !important;
 }
 
-.nav-link:hover.scroll {
-  color: crimson !important;
+.nav-div {
+  position: relative;
+  width: fit-content;
 }
-.nav-link:hover {
-  text-decoration: overline !important;
-  transition: 0.6s ease;
+
+.nav-item {
+  display: flex;
+  justify-content: center;
 }
+
+.nav-text {
+  color: #8e8872;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.nav-text::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  height: 3px;
+  border-radius: 50px;
+  transition: transform 0.4s ease;
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+}
+
+.nav-text:hover {
+  color: white !important;
+}
+.nav-text:hover.scroll {
+  color: white;
+}
+
+.nav-text:hover:after {
+  transform: scale(1, 1);
+  background: white;
+}
+
 /* navbar css end */
 
 /* home section start */
@@ -60,28 +91,31 @@ nav.navbar {
   border-top: 3px solid #212529;
 }
 
-.image{
-    border-radius: 300px;
+.image {
+  border-radius: 300px;
 }
 
-.dow{
+.dow {
   color: white;
   background-color: crimson;
 }
 
-.cvbtn{
+.cvbtn {
   background: crimson !important;
-  color:white !important;
-  transition: 0.6s ease !important;
+  color: #ffffff !important;
+  transition: 0.5s ease !important;
+  box-shadow: 0px 2px 10px 2px #cc8080;
 }
 
 .cvbtn:hover {
-    border: 1px solid crimson;
-    background:white !important;
-    color: crimson !important;
+  border: 1px solid crimson;
+  background: white !important;
+  color: crimson !important;
+  box-shadow: 0px 1px 100px 1px #ccc;
+
 }
 
-.cvbtn:focus{
+.cvbtn:focus {
   box-shadow: none !important;
 }
 /* about css end */
@@ -125,12 +159,11 @@ nav.navbar {
   transform: translateY(-2px);
 }
 
-.box{
-    border-top: 5px solid crimson;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 50px 4px;
-    border-radius: 10px;
+.box {
+  border-top: 5px solid crimson;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 50px 4px;
+  border-radius: 10px;
 }
-
 
 .dark {
   background-color: #111;
@@ -151,34 +184,30 @@ nav.navbar {
 
 /* skills css end */
 
-
 /* contact section start */
 i {
   color: crimson;
 }
 
 .inp {
-    border: none !important;
-    border-bottom: 2px solid grey !important;
-    border-radius: 6px !important;
+  border: none !important;
+  border-bottom: 1px solid grey !important;
+  /* border-radius: 6px !important; */
 }
 
-.inp:focus{
-    border-bottom: 3px solid crimson !important;
+.inp:focus {
+  border-bottom: 3px solid crimson !important;
 }
 
-.inp:focus{
-    box-shadow:none !important;
+.inp:focus {
+  box-shadow: none !important;
 }
 
-.whatsapp{
+.whatsapp {
   font-size: 36px !important;
 }
 
 /* contact section end */
-
-
-
 
 /* footer section start */
 .fo-text {
