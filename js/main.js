@@ -14,6 +14,10 @@ $(document).ready(function () {
     }
   });
 
+  $(".navbar-collapse a").click(function () {
+    $(".navbar-collapse").collapse("hide");
+  });
+
   //typing animation script
   var typed = new Typed(".animate", {
     strings: ["Developer", "Designer", "Programmer", "Gamer"],
@@ -32,14 +36,11 @@ $(document).ready(function () {
   $(document).ready(function () {
     $("#divshow").click(function () {
       $("#mydiv").toggle("slide");
-      if($(this).text() == 'Hide')
-       {
-           $(this).text('Read more...');
-       }
-       else
-       {
-           $(this).text('Hide');
-       }
-           });
+      if ($(this).text() == "Hide") {
+        $(this).text("Read more...");
+      } else {
+        $(this).text("Hide");
+      }
     });
   });
+});
