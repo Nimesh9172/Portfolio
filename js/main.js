@@ -27,7 +27,7 @@ $(document).ready(function () {
   });
 
   var typed = new Typed(".animate-2", {
-    strings: ["Developer", "Designer", "Progammer", "Gamer"],
+    strings: ["Developer", "Designer", "Programmer", "Gamer"],
     typeSpeed: 100,
     backSpeed: 80,
     loop: true,
