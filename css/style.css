@@ -4,6 +4,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 /* navbar css start */
 
 nav.navbar {
@@ -85,7 +87,6 @@ nav.navbar {
   border-radius:50px;
 }
 
-
 .banner-image {
   background-image: url("../img/bg1.jpg");
   background-size: cover;
@@ -135,6 +136,7 @@ nav.navbar {
 .nav-text:hover {
   color: white !important;
 }
+
 .nav-text:hover.scroll {
   color: white;
 }
@@ -152,6 +154,21 @@ nav.navbar {
   color: white !important;
   background: crimson !important;
 }
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+a::selection,
+span::selection,
+img::selection,
+p::selection{
+  background-color: crimson;
+  color:white
+}
+
 
 /* home section end */
 
@@ -277,6 +294,10 @@ i {
   font-size: 36px !important;
 }
 
+::placeholder { /* Chrome/Opera/Safari */
+  color: crimson !important;
+
+}
 /* contact section end */
 
 /* footer section start */
