@@ -164,11 +164,15 @@ h6::selection,
 a::selection,
 span::selection,
 img::selection,
-p::selection{
+p::selection,
+li::selection{
   background-color: crimson;
   color:white
 }
 
+.text-justify {
+  text-align: justify;
+}
 
 /* home section end */
 
