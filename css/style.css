@@ -10,8 +10,8 @@ html {
 
 nav.navbar {
   transition: 0.8s ease;
-  background-color: #101113 !important;
-  box-shadow: 0px 0px 5px 0px #101113;
+  background-color: #1D252D !important;
+  box-shadow: 0px 0px 5px 0px #1D252D;
 }
 
 .navbar-brand {
@@ -88,7 +88,7 @@ nav.navbar {
 }
 
 .banner-image {
-  background-image: url("../img/bg1.jpg");
+  background-image: url("../img/bg.svg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -153,25 +153,6 @@ nav.navbar {
 .rmbtn:hover {
   color: white !important;
   background: crimson !important;
-}
-
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-h5::selection,
-h6::selection,
-a::selection,
-span::selection,
-img::selection,
-p::selection,
-li::selection{
-  background-color: crimson;
-  color:white
-}
-
-.text-justify {
-  text-align: justify;
 }
 
 /* home section end */
@@ -257,7 +238,26 @@ li::selection{
 }
 
 .dark {
-  background-color: #111;
+  background-color: #1D252D;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+a::selection,
+span::selection,
+img::selection,
+p::selection,
+li::selection{
+  background-color: crimson;
+  color:white
+}
+
+.text-justify {
+  text-align: justify;
 }
 /* common css end */
 
