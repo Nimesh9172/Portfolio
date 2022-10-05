@@ -233,7 +233,7 @@ nav.navbar {
 
 .box {
   border-top: 5px solid crimson;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 50px 4px;
+  box-shadow: rgb(0 0 0 / 4%) 0px 8px 25px 4px;
   border-radius: 10px;
 }
 
