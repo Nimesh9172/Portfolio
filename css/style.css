@@ -4,14 +4,20 @@ html {
   scroll-behavior: smooth;
 }
 
+*{
+  margin:0;
+  padding:0;
+}
 
-
+body{
+  overflow-x:hidden ;
+}
 /* navbar css start */
 
 nav.navbar {
   transition: 0.8s ease;
-  background-color: #1D252D !important;
-  box-shadow: 0px 0px 5px 0px #1D252D;
+  background-color: transparent !important;
+  /* box-shadow: 0px 0px 5px 0px #1D252D; */
 }
 
 .navbar-brand {
@@ -88,10 +94,10 @@ nav.navbar {
 }
 
 .banner-image {
-  background-image: url("../img/bg.svg");
+  /* background-image: url("../img/bg.svg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center; */
   height: 100vh !important;
 }
 
@@ -311,3 +317,8 @@ i {
   font-style: "poppins", sans-serif;
 }
 /* footer section end */
+
+#binary{
+  position: absolute;
+  z-index: -1;
+}
