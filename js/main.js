@@ -64,7 +64,7 @@ function init() {
 function draw() {
   ctx.fillStyle = "rgba(29, 37, 45, .1)";
   ctx.fillRect(0,0,c.width,c.height);
-  ctx.fillStyle = "crimson";
+  ctx.fillStyle = "red";
   ctx.font = font_size + "px arial";
   for (var i = 0; i < drops.length; i++) {
     var text = character[Math.floor(Math.random() * character.length)];
