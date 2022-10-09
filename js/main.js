@@ -45,6 +45,7 @@ $(document).ready(function () {
   });
 });
 
+// matrix raining effect start
 
 var c = document.getElementById("binary");
 var ctx = c.getContext("2d");
@@ -89,4 +90,4 @@ const handleResize = () => {
 };
 
 window.addEventListener("resize",handleResize);
-
+// matrix raining effect  end
