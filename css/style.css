@@ -200,8 +200,16 @@ nav.navbar {
 
 /* common css start*/
 
+
+
 .crimson {
   color: crimson !important;
+}
+
+
+section:not(:nth-of-type(1)){
+  width: min(100% - 3em);
+  margin: auto;
 }
 
 .home,
