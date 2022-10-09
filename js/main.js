@@ -19,14 +19,14 @@ $(document).ready(function () {
   });
 
   //typing animation script
-  var typed = new Typed(".animate",{
+  let typed = new Typed(".animate",{
     strings: ["Developer","Designer","Programmer","Gamer"],
     typeSpeed: 100,
     backSpeed: 80,
     loop: true,
   });
 
-  var typed = new Typed(".animate-2",{
+  let typed2 = new Typed(".animate-2",{
     strings: ["Developer","Designer","Programmer","Gamer"],
     typeSpeed: 100,
     backSpeed: 80,
@@ -47,19 +47,19 @@ $(document).ready(function () {
 
 // matrix raining effect start
 
-var c = document.getElementById("binary");
-var ctx = c.getContext("2d");
+let c = document.getElementById("binary");
+let ctx = c.getContext("2d");
 c.height = window.innerHeight;
 c.width = window.innerWidth;
-var font_size = 15;
-var columns = c.width / font_size;
-var character = "ABCDEFGHIJKLMNOPQRSTUVWXYZ120";
+let font_size = 15;
+let columns = c.width / font_size;
+let character = "ABCDEFGHIJKLMNOPQRSTUVWXYZ120";
 character = character.split("");
-var drops = [];
+let drops = [];
 
 function init() {
   drops = [];
-  for (var x = 0; x < columns; x++) drops[x] = 1;
+  for (let x = 0; x < columns; x++) drops[x] = 1;
 }
 
 function draw() {
@@ -67,8 +67,8 @@ function draw() {
   ctx.fillRect(0,0,c.width,c.height);
   ctx.fillStyle = "red";
   ctx.font = font_size + "px arial";
-  for (var i = 0; i < drops.length; i++) {
-    var text = character[Math.floor(Math.random() * character.length)];
+  for (let i = 0; i < drops.length; i++) {
+    let text = character[Math.floor(Math.random() * character.length)];
     ctx.fillText(text,i * font_size,drops[i] * font_size);
     if (drops[i] * font_size > c.height && Math.random() > 0.975) drops[i] = 0;
     drops[i]++;
