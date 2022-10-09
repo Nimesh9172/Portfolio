@@ -11,6 +11,7 @@ html {
 
 body{
   overflow-x:hidden ;
+  overflow: overlay;
 }
 /* navbar css start */
 
@@ -333,3 +334,20 @@ i {
   width: 100%;
 
 }
+
+/* small scroll bar */
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: 	rgba(220, 20, 60, .6)
+;
+  border-radius: 5px;
+}
+
