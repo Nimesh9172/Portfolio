@@ -80,7 +80,7 @@ function draw() {
 }
 
 init();
-let raining = setInterval(draw,33);
+let raining = setInterval(draw,60);
 
 const handleResize = () => {
   clearInterval(raining);
@@ -90,7 +90,7 @@ const handleResize = () => {
   c.setAttribute("width",c.width);
   c.setAttribute("height",c.height);
   init()
-  raining = setInterval(draw,100);
+  raining = setInterval(draw,60);
 };
 
 window.addEventListener("resize",handleResize);
