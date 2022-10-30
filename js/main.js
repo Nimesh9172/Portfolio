@@ -1,6 +1,10 @@
 $(document).ready(function () {
   // navbar scroll animation
   $(window).scroll(function () {
+     if (window.innerWidth < 600) {
+      return;
+    }
+
     if ($(document).scrollTop() > 50) {
       $(".navbar").addClass("scroll");
       $(".navbar-brand").addClass("scroll");
